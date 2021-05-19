@@ -1,0 +1,141 @@
+.about {
+  position: relative;
+}
+.about > img {
+  width: 100%;
+}
+.about > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  top: 40px;
+  left: 5%;
+  text-shadow: 3px 2px 1px #ff3535;
+}
+.about__box {
+  width: 500px;
+  padding: 10px 15px;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  border: 2px solid #00d1ff;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #00d1ff;
+}
+.about__box ul {
+  font-family: "Pacifico", cursive;
+  font-size: 27px;
+  list-style-type: disc;
+  padding: 40px;
+}
+.about__box ul li {
+  margin-top: 15px;
+  color: rgb(0, 0, 66);
+}
+.about__box img {
+  width: 200px;
+  position: absolute;
+  top: -28%;
+  left: 75%;
+}
+
+@media all and (max-width: 1330px) {
+  .about {
+    position: relative;
+    margin-top: 40px;
+  }
+  .about > img {
+    width: 100%;
+  }
+  .about__box {
+    width: 450px;
+    padding: 10px 15px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+  }
+  .about__box ul {
+    font-size: 25px;
+    padding: 30px;
+  }
+  .about__box ul li {
+    margin-top: 15px;
+  }
+  .about__box img {
+    width: 180px;
+    position: absolute;
+    top: -28%;
+    left: 75%;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .about {
+    position: relative;
+    margin-top: 20px;
+  }
+  .about > img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+  }
+  .about__box {
+    width: 50%;
+    min-width: 400px;
+    padding: 0px 5px;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    background-color: white;
+  }
+  .about__box ul {
+    font-size: 23px;
+    padding: 30px;
+  }
+  .about__box ul li {
+    margin-top: 15px;
+    color: rgb(0, 0, 66);
+  }
+  .about__box img {
+    width: 180px;
+    position: absolute;
+    top: -29%;
+    left: 55%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .about {
+    margin-top: -20px;
+  }
+  .about > h1 {
+    font-size: 27px;
+  }
+  .about__box {
+    width: 100%;
+    max-width: 400px;
+    padding: 6px 10px;
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    border: 2px solid #00d1ff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #00d1ff;
+  }
+  .about__box ul {
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+    list-style-type: disc;
+    padding: 20px;
+  }
+  .about__box ul li {
+    margin-top: 15px;
+    color: rgb(0, 0, 66);
+  }
+  .about__box img {
+    width: 120px;
+    position: absolute;
+    top: -26%;
+    left: 45%;
+  }
+}

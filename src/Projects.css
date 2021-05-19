@@ -1,0 +1,32 @@
+.projects {
+  background-image: url(img/Group3.png);
+  width: 100%;
+  height: auto;
+}
+.projects > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  text-shadow: 3px 2px 1px #ff3535;
+  z-index: 10;
+  text-align: right;
+  padding-right: 5%;
+}
+.projects__container {
+  max-width: 1000px;
+  margin-top: 5%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-bottom: 50px;
+}
+
+@media all and (max-width: 400px) {
+  .projects > h1 {
+    font-size: 27px;
+  }
+  .projects__container {
+    max-width: 100%;
+    margin-top: 25%;
+  }
+}

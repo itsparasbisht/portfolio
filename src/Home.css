@@ -1,0 +1,147 @@
+.home {
+  position: relative;
+}
+.home > img {
+  width: 100%;
+}
+.home > h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 140px;
+  font-weight: 900;
+  position: absolute;
+  top: 270px;
+  left: 70px;
+  color: rgb(24, 24, 24);
+}
+
+.home > h1 > b {
+  font-size: 250px;
+  font-weight: 900;
+  text-shadow: 7px 5px 1px #ff3535;
+}
+.home__tagOne,
+.home__tagTwo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  color: #00d1ff;
+}
+.home__tagOne {
+  position: absolute;
+  top: 39%;
+  left: 43%;
+}
+.home__tagTwo {
+  position: absolute;
+  top: 67%;
+  left: 49%;
+}
+
+@media all and (max-width: 1330px) {
+  .home > img {
+    width: 100vw;
+    height: 900px;
+    object-fit: contain;
+  }
+  .home > h1 {
+    font-size: max(80px, 90%);
+    position: absolute;
+    top: 42%;
+    left: 5%;
+  }
+  .home > h1 > b {
+    font-size: 170px;
+  }
+  .home__tagOne,
+  .home__tagTwo {
+    font-size: 35px;
+    color: rgb(0, 88, 146);
+    text-shadow: 2px 2px 1px #ffffff;
+  }
+  .home__tagOne {
+    position: absolute;
+    top: 44%;
+    left: 44%;
+  }
+  .home__tagTwo {
+    position: absolute;
+    top: 63%;
+    left: 47%;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .home > img {
+    width: 100vw;
+    height: 800px;
+    object-fit: cover;
+  }
+  .home > h1 {
+    font-size: max(70px, 80%);
+    position: absolute;
+    top: 37%;
+    left: 2%;
+    line-height: 90px;
+    color: #ff3535;
+  }
+  .home > h1 > b {
+    font-size: calc(10vw + 70px);
+    position: relative;
+    text-shadow: 7px 5px 1px #000000;
+  }
+  .home__tagOne,
+  .home__tagTwo {
+    font-size: calc(1.5vw + 20px);
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 1px #ffffff;
+  }
+  .home__tagOne {
+    position: absolute;
+    top: 32%;
+    left: 2%;
+  }
+  .home__tagTwo {
+    font-size: calc(1.5vw + 20px);
+    position: absolute;
+    top: 65%;
+    right: 5%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  .home > img {
+    width: 100vw;
+    height: 700px;
+    object-fit: cover;
+  }
+  .home > h1 {
+    font-size: 50px;
+    position: absolute;
+    top: 37%;
+    left: 2%;
+    line-height: 70px;
+    color: #ff3535;
+  }
+  .home > h1 > b {
+    font-size: 80px;
+    position: relative;
+    text-shadow: 7px 5px 1px #000000;
+  }
+  .home__tagOne,
+  .home__tagTwo {
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 1px #ffffff;
+  }
+  .home__tagOne {
+    position: absolute;
+    top: 32%;
+    left: 2%;
+  }
+  .home__tagTwo {
+    font-size: 22px;
+    position: absolute;
+    top: 63%;
+    right: 5%;
+  }
+}
