@@ -117,7 +117,7 @@
   .home > h1 {
     font-size: 50px;
     position: absolute;
-    top: 37%;
+    top: 35%;
     left: 2%;
     line-height: 70px;
     color: #ff3535;
@@ -125,23 +125,26 @@
   .home > h1 > b {
     font-size: 80px;
     position: relative;
+    top: -15px;
     text-shadow: 7px 5px 1px #000000;
   }
   .home__tagOne,
   .home__tagTwo {
-    font-size: 22px;
-    color: rgb(0, 0, 0);
+    font-size: 20px;
+    color: #000000;
     text-shadow: 2px 2px 1px #ffffff;
   }
   .home__tagOne {
     position: absolute;
-    top: 32%;
+    top: 30%;
     left: 2%;
+    font-weight: 700;
   }
   .home__tagTwo {
-    font-size: 22px;
+    font-size: 20px;
     position: absolute;
-    top: 63%;
+    top: 58%;
     right: 5%;
+    font-weight: 700;
   }
 }

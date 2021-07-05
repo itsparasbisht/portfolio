@@ -11,6 +11,7 @@ function Projects() {
                 <Project source={"projects/project2.png"} title={"Breaking Bad"} link={"https://its-breakingbad.netlify.app/"}/>
                 <Project source={"projects/project3.png"} title={"Gallery App"} link={"https://my-gallery-app-5e3ca.web.app"}/>
                 <Project source={"projects/project4.jpg"} title={"Amazon clone"} link={"https://clone-d781d.web.app"}/>
+                <Project source={"projects/project5.jpg"} title={"WhatsApp clone"} link={"https://whatsapp-mern-3ccaa.web.app"}/>
             </div>
         </div>
     )

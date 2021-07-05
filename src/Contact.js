@@ -11,19 +11,24 @@ function Contact() {
     const handleSubmit = (e) => {
 
         e.preventDefault()
-        db.collection("messages").add({
-            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            name: name,
-            email: email,
-            message: message
-        })
-        .then(() => {
-            setName('')
-            setEmail('')
-            setMessage('')
-            window.alert("THANKs, call you soon...")
-        })
-        .catch(error => window.alert(error))
+        if(name && email && message){
+            db.collection("messages").add({
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+                name: name,
+                email: email,
+                message: message
+            })
+            .then(() => {
+                setName('')
+                setEmail('')
+                setMessage('')
+                window.alert("THANKs, call you soon...")
+            })
+            .catch(error => window.alert(error))
+        }
+        else{
+            window.alert("provide field values")
+        }
         
     }
 
@@ -36,7 +41,6 @@ function Contact() {
                     type="text"
                     name="name"
                     id="name"
-                    required
                     onChange={(e) => setName(e.target.value)}
                     value={name}
                 />
@@ -46,7 +50,6 @@ function Contact() {
                     type="email"
                     name="email"
                     id="email"
-                    required
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
                 />
@@ -58,7 +61,6 @@ function Contact() {
                     cols="25"
                     rows="10"
                     placeholder="type your message..."
-                    required
                     maxLength="500"
                     onChange={(e) => setMessage(e.target.value)}
                     value={message}

@@ -123,9 +123,6 @@ footer {
     width: 100px;
     padding: 3px 3px;
   }
-}
-
-@media all and (max-width: 400px) {
   .contact > h1 {
     font-size: 27px;
   }
@@ -140,9 +137,13 @@ footer {
     margin-right: 15px;
   }
   .contact__text {
-    border-left: 2px solid black;
+    border-left: 0px solid black;
+    padding-left: 0px;
   }
   .contact__text a {
-    font-size: 17px;
+    font-size: 16px;
+  }
+  #contact label {
+    font-size: 18px;
   }
 }

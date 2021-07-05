@@ -37,6 +37,9 @@
   position: absolute;
   top: -28%;
   left: 75%;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 @media all and (max-width: 1330px) {
@@ -86,7 +89,7 @@
     position: absolute;
     top: 30%;
     left: 5%;
-    background-color: white;
+    background-color: transparent;
   }
   .about__box ul {
     font-size: 23px;
@@ -107,35 +110,45 @@
 @media all and (max-width: 400px) {
   .about {
     margin-top: -20px;
+    width: 100%;
+    max-width: 100%;
   }
   .about > h1 {
     font-size: 27px;
+    margin-top: 20px;
   }
   .about__box {
     width: 100%;
-    max-width: 400px;
-    padding: 6px 10px;
+    min-width: 0px;
+    padding: 0px;
     position: absolute;
-    top: 30%;
+    top: 47%;
     left: 0%;
-    border: 2px solid #00d1ff;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px #00d1ff;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
   }
   .about__box ul {
     font-family: "Pacifico", cursive;
     font-size: 20px;
     list-style-type: disc;
-    padding: 20px;
+    padding: 10px;
+    padding-top: 40px;
+    padding-left: 30px;
   }
   .about__box ul li {
-    margin-top: 15px;
+    margin-top: 5px;
     color: rgb(0, 0, 66);
+    font-size: 20px;
+    text-align: left;
   }
   .about__box img {
-    width: 120px;
+    width: 150px;
     position: absolute;
-    top: -26%;
-    left: 45%;
+    top: -53%;
+    left: 10px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
 }
